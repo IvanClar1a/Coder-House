@@ -1,0 +1,196 @@
+
+/*Reset css*/
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family:'Inclusive Sans', sans-serif;  
+}
+
+
+/* Estilo del "PADRE" */
+.contaiener{ 
+ display: flex;
+ flex-direction:column;
+   
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* INDEX */
+
+header{
+    height: 75px; /* Alto */
+    width: 100%; /*Ancho*/
+    background-color: rgb(0, 0, 0);
+    padding: 12px 0px;
+    display: flex;  /* Flex indicara que sus hijos seran flexibles*/
+    flex-direction: row; /* flex-direction nos permite especificar si los items se dispongan en fila o columnas*/ /* row va alinear los elementos en fila*/
+    align-items: center; 
+    justify-content: space-between; /* Justify-content nos permite alinear los elementos en el eje principal (vertical o horizontal*/ /* space-between permite que se distribuyan de manera uniforme*/
+    
+    grid-area:header;
+    
+}
+
+header ul{
+    list-style: none; /* Le quita el formato a los  puntos (.)*/
+    display: flex;
+    flex-direction: row;
+    
+}
+
+header nav ul li a{
+    padding: 0px 12px;
+    color: rgb(201, 175, 175);
+    text-decoration: none; /* le saca el subrayado  a los links*/
+}
+header a{
+    text-decoration: none;
+}
+header a p{
+    color: rgb(201, 175, 175);
+    margin-left: 100px; /* a que distancia del margen esta*/
+    font-size: 17px; /* Tamaño de la tipografia*/
+    
+}
+
+/* transiciones*/
+header a:hover{  
+    transform: scale(1.2);
+}
+header a p:hover{
+    color: white;
+}
+header nav li:hover{
+    transform: scale(1.1);
+}
+header nav li a:hover{
+    color:white;
+}
+
+.section{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    padding: 5px 120px;
+    
+    
+    background-color: rgb(0, 0, 0);
+
+    grid-area: section;
+}
+
+.section  div h5{
+    color: rgb(157, 93, 216);
+    padding: 5px 7px;
+}
+.section .titulo-grande{
+    color: white;
+}
+
+.section div div p{
+    color:white;
+    justify-content: space-between;
+}
+.boton-inscripcion input{
+    background-color: rgb(157, 93, 216);
+    color: aliceblue;
+    border-radius: 2px;
+    width: 120px;
+    height: 30px;
+    border-color:rgb(157, 93, 216); ;
+}
+.titulo-grande{
+    font-size: 250%;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* About Us*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Blog Academy*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Contact*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Teachers*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Footer */
+.footer-redsocial img{
+    width: 40px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(26, 29, 55); /* Cambia esto al color de fondo deseado */
+    color: #fff; /* Cambia esto al color de texto deseado */
+    
+
+    grid-area: footer;
+   
+}
+.footer-redsocial {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.footer-redsocial a img{
+    height: 30px;
+    width: 30px;
+    padding: 6px;
+    
+}
+.footer-tex{
+    padding: 12px;
+    
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*MEDIA QUERIES - MOBILE*/
+
+@media (max-width:375px){  /* max-width es para que ocupe el maximo de la pantalla entre 0px y 375px */
+    
+    header{
+       height: auto;
+       flex-direction: column;
+       align-items: center;
+    }
+    header a p{
+        margin-left: 0px;
+        padding: 19px ;
+    }
+    
+    .section{
+     
+        padding: 10px 10px;
+    
+    }
+
+   
+  
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*MEDIA QUERIES - TABLET*/
+
+@media (min-width:376px) and (max-width:992px){ /* min-width es la menor cantidad de px hasta el mayor*/ /* El operador and nos permite combinar (sumar)resoluciones */
+    header{
+        background-color: rgb(4, 53, 37);
+    }
+}
