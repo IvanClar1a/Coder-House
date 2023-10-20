@@ -11,7 +11,8 @@
 /* Estilo del "PADRE" */
 .contaiener{ 
  display: flex;
- flex-direction:column;
+ flex-direction:row;
+ justify-content: space-between;
    
 }
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -28,7 +29,7 @@ header{
     align-items: center; 
     justify-content: space-between; /* Justify-content nos permite alinear los elementos en el eje principal (vertical o horizontal*/ /* space-between permite que se distribuyan de manera uniforme*/
     
-    grid-area:header;
+    
     
 }
 
@@ -71,28 +72,43 @@ header nav li a:hover{
 .section{
    
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
     height: 600px;
     padding: 5px 120px;
     
     
     background-color: rgb(0, 0, 0);
 
-    grid-area: section;
+    
 }
 
-.section  div h5{
+.section div  h5{
     color: rgb(157, 93, 216);
-    padding: 5px 7px;
+    padding: 5px 7px ;
+    margin: 20px;
 }
+
+.section video{
+    margin: 20px 100px 190px ;
+}
+.section  video source{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+
 .section .titulo-grande{
     color: white;
 }
 
-.section div div p{
+.section  div p{
     color:white;
     justify-content: space-between;
+}
+.section div div p{
+    font-size: 13px;
 }
 .boton-inscripcion input{
     background-color: rgb(157, 93, 216);
@@ -129,7 +145,7 @@ header nav li a:hover{
 .footer-redsocial img{
     width: 40px;
 }
-
+/* 
 .footer{
     display: flex;
     justify-content: space-between;
@@ -138,27 +154,35 @@ header nav li a:hover{
     left: 0;
     width: 100%;
     background-color: rgb(26, 29, 55); /* Cambia esto al color de fondo deseado */
-    color: #fff; /* Cambia esto al color de texto deseado */
-    
+    /* Cambia esto al color de texto deseado */
 
-    grid-area: footer;
-   
-}
-.footer-redsocial {
+
+.footer{
     display: flex;
-    justify-content: end;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(26, 29, 55);;
+    color: white;
+    height: 55px;
+    width: 100%;
 }
+.footer .footer-tex {
+  
+    padding: 10px;
+}
+
 .footer-redsocial a img{
+    
     height: 30px;
     width: 30px;
-    padding: 6px;
+    padding: 10px;
     
 }
-.footer-tex{
-    padding: 12px;
-    
-}
+
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*MEDIA QUERIES - MOBILE*/
@@ -180,9 +204,18 @@ header nav li a:hover{
         padding: 10px 10px;
     
     }
+    .section video{
 
-   
-  
+    }
+
+    .footer-redsocial {
+       
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
