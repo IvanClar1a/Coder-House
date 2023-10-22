@@ -3,17 +3,16 @@
 *{
     margin: 0;
     padding: 0;
-    
     font-family:'Inclusive Sans', sans-serif;  
 }
 
-
+body{
+    background-color: rgb(0, 0, 0);
+}
 /* Estilo del "PADRE" */
 .contaiener{ 
- display: flex;
- flex-direction:row;
- justify-content: space-between;
-   
+    display: flex;
+    
 }
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -22,15 +21,12 @@
 header{
     height: 75px; /* Alto */
     width: 100%; /*Ancho*/
-    background-color: rgb(0, 0, 0);
     padding: 12px 0px;
     display: flex;  /* Flex indicara que sus hijos seran flexibles*/
     flex-direction: row; /* flex-direction nos permite especificar si los items se dispongan en fila o columnas*/ /* row va alinear los elementos en fila*/
     align-items: center; 
     justify-content: space-between; /* Justify-content nos permite alinear los elementos en el eje principal (vertical o horizontal*/ /* space-between permite que se distribuyan de manera uniforme*/
-    
-    
-    
+
 }
 
 header ul{
@@ -41,17 +37,19 @@ header ul{
 }
 
 header nav ul li a{
-    padding: 0px 12px;
+    padding: 0px 25px;
     color: rgb(201, 175, 175);
     text-decoration: none; /* le saca el subrayado  a los links*/
+    font-size: 20px;
 }
 header a{
     text-decoration: none;
+
 }
 header a p{
     color: rgb(201, 175, 175);
     margin-left: 100px; /* a que distancia del margen esta*/
-    font-size: 17px; /* Tamaño de la tipografia*/
+    font-size: 20px; /* Tamaño de la tipografia*/
     
 }
 
@@ -70,54 +68,119 @@ header nav li a:hover{
 }
 
 .section{
-   
     display: flex;
-    flex-direction: row;
-    height: 600px;
+    flex-direction:row;
     padding: 5px 120px;
-    
-    
     background-color: rgb(0, 0, 0);
-
+  
     
 }
 
 .section div  h5{
+    justify-content: start;
     color: rgb(157, 93, 216);
-    padding: 5px 7px ;
-    margin: 20px;
+    padding: 50px 0px ;
+    margin: 20px ;
+    font-size: 24px;
 }
 
 .section video{
-    margin: 20px 100px 190px ;
+    
+    position: relative; /* Permite el desplazamiento relativo del video*/
+    left: 300px;  /* Mueve el video 300px hacia la derecha*/
+    top: 100px; /* Mueve el video hacia abajo*/  /* si lo queremos mover hacia arriba usamos el signo menor (-)*/
+   
 }
-.section  video source{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
-}
-
 
 .section .titulo-grande{
     color: white;
+    
 }
 
 .section  div p{
     color:white;
     justify-content: space-between;
+    font-size: 60px;
+    
 }
 .section div div p{
-    font-size: 13px;
+    font-size: 16px;
 }
-.boton-inscripcion input{
+.botonInscripcion button{
     background-color: rgb(157, 93, 216);
     color: aliceblue;
     border-radius: 2px;
-    width: 120px;
-    height: 30px;
-    border-color:rgb(157, 93, 216); ;
+    width: 140px;
+    height: 43px;
+    border-color:rgb(157, 93, 216);
+    
 }
+
+button{
+    position: relative;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background: rgb(221, 138, 246);
+    cursor: pointer;
+    transition: .5s;
+    overflow: hidden;
+}
+
+
+/* Transicion para el boton de inscripcion*/
+button:hover{
+    color: black;
+}
+button span{
+    position: absolute;
+    background-color: white;
+    transition: .5s;
+}
+button span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+}
+button span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+}
+button span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+button span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+button:hover span:nth-child(1){
+    left: 0;
+}
+button:hover span:nth-child(2){
+    right: 0;
+}
+button:hover span:nth-child(3){
+    bottom: 0;
+}
+button:hover span:nth-child(4){
+    top: 0;
+}
+
+button a{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+
 .titulo-grande{
     font-size: 250%;
 }
@@ -199,6 +262,15 @@ header nav li a:hover{
         margin-left: 0px;
         padding: 19px ;
     }
+    header nav ul li a{
+        padding: 0px 20px;
+        font-size: 9px;
+    }
+    /*Boton inscripcion*/
+    .botonInscripcion button{
+        width: 110px;
+        height: 33px; 
+    }
     
     .section{
         display: flex;
@@ -206,10 +278,26 @@ header nav li a:hover{
         padding: 10px 10px;
     
     }
+    .section div  h5{
+        text-align: center;
+        
+        padding: 50px 0px ;
+        margin: 20px ;
+        font-size: 17px;
+    }
+    .section  div p{
+        text-align: center;
+        color:white;
+        font-size: 30px;
+        
+    }
+   
     .section video{
-        height: auto;
-        width: 210px;
-        padding: auto;
+        width: 320px;
+        position:static; /* Permite el desplazamiento relativo del video*/
+        right: 300px;  /* Mueve el video 300px hacia la derecha*/
+        top: -100px; /* Mueve el video hacia abajo*/  /* si lo queremos mover hacia arriba usamos el signo menor (-)*/
+       
     }
     .footer{
         
