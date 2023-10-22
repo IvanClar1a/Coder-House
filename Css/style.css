@@ -168,7 +168,7 @@ header nav li a:hover{
     background-color:rgb(26, 29, 55);;
     color: white;
     height: 55px;
-    width: 100%;
+    
 }
 .footer .footer-tex {
   
@@ -190,6 +190,7 @@ header nav li a:hover{
 @media (max-width:375px){  /* max-width es para que ocupe el maximo de la pantalla entre 0px y 375px */
     
     header{
+      
        height: auto;
        flex-direction: column;
        align-items: center;
@@ -200,21 +201,34 @@ header nav li a:hover{
     }
     
     .section{
-     
+        display: flex;
+        flex-direction: column;
         padding: 10px 10px;
     
     }
     .section video{
-
+        height: auto;
+        width: 210px;
+        padding: auto;
     }
-
+    .footer{
+        
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+        height: 80px;
+        
+    }
+    .footer .footer-tex{
+        font-size: 12px;
+    }
     .footer-redsocial {
        
         justify-content: center;
         align-items: center;
     }
-
-
+  
     
 }
 
