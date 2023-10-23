@@ -9,73 +9,50 @@
 body{
     background-color: rgb(0, 0, 0);
 }
-/* Estilo del "PADRE" */
+/* Estilo del "PADRE" 
 .contaiener{ 
     display: flex;
-    
+    justify-content: space-between;
+    flex-direction: row;
 }
+*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* INDEX */
 
-header{
-    height: 75px; /* Alto */
-    width: 100%; /*Ancho*/
-    padding: 12px 0px;
-    display: flex;  /* Flex indicara que sus hijos seran flexibles*/
-    flex-direction: row; /* flex-direction nos permite especificar si los items se dispongan en fila o columnas*/ /* row va alinear los elementos en fila*/
-    align-items: center; 
-    justify-content: space-between; /* Justify-content nos permite alinear los elementos en el eje principal (vertical o horizontal*/ /* space-between permite que se distribuyan de manera uniforme*/
-
-}
-
-header ul{
-    list-style: none; /* Le quita el formato a los  puntos (.)*/
-    display: flex;
-    flex-direction: row;
-    
-}
-
-header nav ul li a{
-    padding: 0px 25px;
-    color: rgb(201, 175, 175);
-    text-decoration: none; /* le saca el subrayado  a los links*/
+.navbar{
+    height: 75px;
     font-size: 20px;
+    background-color: rgb(0, 0, 0);
 }
-header a{
-    text-decoration: none;
+/*
+.navbar-brand{
+    padding: 130px;  Separa el logo o el nombre de la empresa del margen
+}
+*/
+.collapse{
+    justify-content: end; /*Mandamos los hijos al final del header*/
+    padding: 100px;
+}
 
-}
-header a p{
-    color: rgb(201, 175, 175);
-    margin-left: 100px; /* a que distancia del margen esta*/
-    font-size: 20px; /* Tamaño de la tipografia*/
-    
+.collapse .navbar-nav .nav-item{
+    padding: 0px 20px;  /* separamos los items ente si por un ancho de 20px*/
 }
 
-/* transiciones*/
-header a:hover{  
+/* transiciones del header*/
+.nav-item a:hover{  
     transform: scale(1.2);
 }
-header a p:hover{
+.nav-item a p:hover{
     color: white;
 }
-header nav li:hover{
-    transform: scale(1.1);
-}
-header nav li a:hover{
-    color:white;
-}
+
 
 .section{
     display: flex;
     flex-direction:row;
-    padding: 5px 120px;
-    background-color: rgb(0, 0, 0);
-  
-    
+    padding: 5px 0px;
 }
-
 .section div  h5{
     justify-content: start;
     color: rgb(157, 93, 216);
@@ -83,11 +60,10 @@ header nav li a:hover{
     margin: 20px ;
     font-size: 24px;
 }
-
 .section video{
     
     position: relative; /* Permite el desplazamiento relativo del video*/
-    left: 300px;  /* Mueve el video 300px hacia la derecha*/
+    left: 200px;  /* Mueve el video 300px hacia la derecha*/
     top: 100px; /* Mueve el video hacia abajo*/  /* si lo queremos mover hacia arriba usamos el signo menor (-)*/
    
 }
@@ -96,7 +72,6 @@ header nav li a:hover{
     color: white;
     
 }
-
 .section  div p{
     color:white;
     justify-content: space-between;
@@ -108,15 +83,16 @@ header nav li a:hover{
 }
 .botonInscripcion button{
     background-color: rgb(157, 93, 216);
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     border-radius: 2px;
     width: 140px;
     height: 43px;
     border-color:rgb(157, 93, 216);
     
+    
 }
 
-button{
+.botonInscripcion button{
     position: relative;
     padding: 10px 15px;
     border: none;
@@ -129,61 +105,56 @@ button{
 
 
 /* Transicion para el boton de inscripcion*/
-button:hover{
+.botonInscripcion button:hover{
     color: black;
 }
-button span{
+.botonInscripcion button span{
     position: absolute;
     background-color: white;
     transition: .5s;
 }
-button span:nth-child(1){
+.botonInscripcion button span:nth-child(1){
     width: 100%;
     height: 1px;
     top: 0;
     left: -100%;
 }
-button span:nth-child(2){
+.botonInscripcion button span:nth-child(2){
     width: 100%;
     height: 1px;
     bottom: 0;
     right: -100%;
 }
-button span:nth-child(3){
+.botonInscripcion button span:nth-child(3){
     width: 1px;
     height: 100%;
     bottom: -100%;
     left: 0;
 }
-button span:nth-child(4){
+.botonInscripcion button span:nth-child(4){
     width: 1px;
     height: 100%;
     top: -100%;
     right: 0;
 }
-button:hover span:nth-child(1){
+.botonInscripcion button:hover span:nth-child(1){
     left: 0;
 }
-button:hover span:nth-child(2){
+.botonInscripcion button:hover span:nth-child(2){
     right: 0;
 }
-button:hover span:nth-child(3){
+.botonInscripcion button:hover span:nth-child(3){
     bottom: 0;
 }
-button:hover span:nth-child(4){
+.botonInscripcion button:hover span:nth-child(4){
     top: 0;
 }
-
-button a{
+.botonInscripcion button a{
     text-decoration: none;
     font-size: 15px;
+    color: white;
 }
 
-
-
-.titulo-grande{
-    font-size: 250%;
-}
 
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -235,13 +206,15 @@ button a{
 }
 .footer .footer-tex {
   
-    padding: 10px;
+    padding: 20px;
 }
-
+.footer-redsocial a{
+    text-decoration: none;
+}
 .footer-redsocial a img{
     
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     padding: 10px;
     
 }
@@ -252,26 +225,14 @@ button a{
 
 @media (max-width:375px){  /* max-width es para que ocupe el maximo de la pantalla entre 0px y 375px */
     
-    header{
-      
-       height: auto;
-       flex-direction: column;
-       align-items: center;
-    }
-    header a p{
-        margin-left: 0px;
-        padding: 19px ;
-    }
-    header nav ul li a{
-        padding: 0px 20px;
-        font-size: 9px;
-    }
+    
     /*Boton inscripcion*/
     .botonInscripcion button{
         width: 110px;
         height: 33px; 
+
     }
-    
+  
     .section{
         display: flex;
         flex-direction: column;
@@ -305,14 +266,14 @@ button a{
         align-items: center;
         width: 100%;
         
-        height: 80px;
         
     }
     .footer .footer-tex{
         font-size: 12px;
+        
     }
     .footer-redsocial {
-       
+        
         justify-content: center;
         align-items: center;
     }
