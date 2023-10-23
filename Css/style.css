@@ -97,7 +97,7 @@ body{
     padding: 10px 15px;
     border: none;
     outline: none;
-    background: rgb(221, 138, 246);
+    background: rgb(157, 93, 216);
     cursor: pointer;
     transition: .5s;
     overflow: hidden;
@@ -176,20 +176,6 @@ body{
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Footer */
-.footer-redsocial img{
-    width: 40px;
-}
-/* 
-.footer{
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(26, 29, 55); /* Cambia esto al color de fondo deseado */
-    /* Cambia esto al color de texto deseado */
-
 
 .footer{
     display: flex;
@@ -204,6 +190,10 @@ body{
     height: 55px;
     
 }
+.footer-redsocial img{
+    width: 40px;
+}
+
 .footer .footer-tex {
   
     padding: 20px;
