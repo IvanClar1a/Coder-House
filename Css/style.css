@@ -172,15 +172,14 @@ body{
 .body-contact{
     background-color:  rgb(26, 29, 55);
 }
+
 form{
     position: absolute;
     left: 700px;
-    top: 300px ;
-    
+    top: 350px ;
 }
 
 form label{
-    
     color: rgb(255, 255, 255); /* cambiamos el color a los titulos del formulario*/
     
 }
@@ -193,8 +192,22 @@ form label{
     width: 55%;
     
 }
+.col-md-3{ /* el formulario provincia lo muevo para que quede al lado del inpum ciudad*/
+ position: relative;
+ left: -240px;
+}   
 
-
+.section-formulario{
+    color: white;
+}
+.section-formulario div h3{
+    font-size: 60px;
+    text-align: center;
+}
+.section-formulario div p{
+    font-size: 16px;
+    padding: 0px 300px;
+}
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
