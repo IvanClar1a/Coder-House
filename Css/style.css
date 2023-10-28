@@ -25,11 +25,7 @@ body{
     font-size: 20px;
     background-color: rgb(0, 0, 0);
 }
-/*
-.navbar-brand{
-    padding: 130px;  Separa el logo o el nombre de la empresa del margen
-}
-*/
+
 .collapse{
     justify-content: end; /*Mandamos los hijos al final del header*/
     padding: 100px;
@@ -104,7 +100,7 @@ body{
 }
 
 
-/* Transicion para el boton de inscripcion*/
+/* Transicion para el boton de inscripcion*/ /* Usando seudoclases */
 .botonInscripcion button:hover{
     color: black;
 }
@@ -186,6 +182,7 @@ form label{
 .form-control{
     width: 55%;
     height: 40px;
+    
 
 }
 .input-group{
@@ -199,14 +196,16 @@ form label{
 
 .section-formulario{
     color: white;
+    text-align: center;
 }
 .section-formulario div h3{
-    font-size: 60px;
-    text-align: center;
+    position: relative;
+    left: 70px;
+    font-size: 70px;
+    
 }
 .section-formulario div p{
     font-size: 16px;
-    padding: 0px 300px;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
