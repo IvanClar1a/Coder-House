@@ -406,6 +406,7 @@ form label{
     }
     .section-index video{
         width: 320px;
+        justify-content: center;
         position:relative; /* Permite el desplazamiento relativo del video*/
         top: -150px; /* Mueve el video hacia abajo*/  /* si lo queremos mover hacia arriba usamos el signo menor (-)*/
         left: 15px;
