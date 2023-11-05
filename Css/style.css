@@ -367,7 +367,7 @@ form label{
         display: flex;
         align-items: center;
         position: relative;
-        top: -90px;
+        top: -70px;
         width: 110px;
         height: 33px; 
 
@@ -405,14 +405,106 @@ form label{
         font-size: 16px;
     }
     .section-index video{
+        
         width: 320px;
         justify-content: center;
         position:relative; /* Permite el desplazamiento relativo del video*/
-        top: -150px; /* Mueve el video hacia abajo*/  /* si lo queremos mover hacia arriba usamos el signo menor (-)*/
+        top: 2px; /* Mueve el video hacia abajo*/  /* si lo queremos mover hacia arriba usamos el signo menor (-)*/
         left: 15px;
+        height: auto;
     }
     
-  
+        /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+        /* About Us*/
+        .body-aboutUs{
+           padding-bottom: 1700px; /* agrega  relleno en la parte inferior del body*/
+                                    /* En ete caso para que mi img de fondo no se me superponga*/
+        }
+        .section-aboutUs .section-titulos{
+            text-align: center;
+        }
+        .section-aboutUs .section-titulos h6{
+            position: relative;
+            top: 70px;
+            color: #b06bff;
+            
+        }
+        .section-aboutUs .section-titulos h4{
+            position: relative;
+            top: 80px;
+            font-size: 35px;
+            color: #b06bff;
+        }
+        .section-aboutUs .section-titulos p{
+            text-align: justify;
+            position: relative;
+            top: 95px;
+            font-size: 16px;
+            padding: 30px;
+        }
+
+        /* Contenido de img y parrafo*/
+        .img-contenido{   
+            display: flex;
+            flex-direction: column;
+            position: absolute  ;
+            left: 20px;
+            top: 850px;
+
+
+        }
+        .img-contenido h6{
+            position: relative;
+            left: 10px;
+            font-size: 17px;
+            padding: 0px 10px;
+            font-size: 17.5px;
+            
+            
+        }
+        .img-contenido p{
+            padding: 20px 20px 100px;
+            text-align: justify;
+        }
+        .img-contenido i{
+            
+            position: relative;
+            top: 60px;
+            left:100px;
+        }
+        /* Posicion de los iconos con los parrafos*/
+        .iconPerson i{
+            top: -45px;
+            left: 145px;
+            
+        }
+        .iconSinLimites i{
+            top: -50px;
+            left: 145px;
+            
+        }
+        .iconLibro i{
+            top: -50px;
+            left: 145px;
+        }
+        .iconEscudo i{
+            top: -50px;
+            left: 145px;
+        }
+
+        /* Imagen de fondo*/
+        
+        .section-aboutUs .imgFondo img{
+            position: relative;
+            left: -50px;
+            top: 1450px;
+            width: 250px;
+            height: 250px;
+            
+            
+        }
+    
     /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
     /*Contact*/
@@ -460,7 +552,6 @@ form label{
         
     }
     .col-md-3{ /* el formulario provincia lo muevo para que quede al lado del inpum ciudad*/
-     
         width: 70%;
         left: 0px;
      
