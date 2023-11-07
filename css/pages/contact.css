@@ -1,0 +1,48 @@
+.body-contact {
+  background-color: rgb(26, 29, 55);
+}
+
+.section-contact {
+  color: white;
+  text-align: center;
+  padding: 100px;
+}
+.section-contact div h3 {
+  position: relative;
+  left: 10px;
+  font-size: 70px;
+}
+.section-contact div p {
+  padding-left: 0px;
+  font-size: 16px;
+}
+
+form {
+  position: absolute;
+  left: 300px;
+  top: 370px;
+}
+form label {
+  color: rgb(255, 255, 255);
+}
+form .form-control {
+  width: 45%;
+  height: 40px;
+}
+form .input-group {
+  width: 45%;
+}
+form .col-md-3 {
+  position: relative;
+  left: -400px;
+  width: 20%;
+}
+
+.imgContact img {
+  position: relative;
+  top: -50px;
+  left: 1200px;
+  width: 600px;
+}
+
+/*# sourceMappingURL=contact.css.map */

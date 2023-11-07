@@ -1,0 +1,75 @@
+.body-aboutUs{
+    background-color:  rgb(26, 29, 55);
+}
+
+.section-aboutUs{
+    color: white;
+
+    .section-titulos{
+        text-align: center;
+
+        h6{
+            position: relative;
+            top: 70px;
+            color: #b06bff;
+        }
+        h4{
+            position: relative;
+            top: 80px;
+            font-size: 45px;
+            color: #b06bff;
+        }
+        p{
+            position: relative;
+            top: 95px;
+            font-size: 19px;  
+        }
+    }
+
+    //Contenido de img y parrafos
+    
+    .img-contenido{
+        position: absolute;
+        left: 370px;
+        top: 500px;
+
+        h6{
+            font-size: 17px;
+        }
+        p{
+            font-size: 14.5px;
+        }
+        i{
+            position: relative;
+            top: 60px;
+            left:-100px;
+        }
+
+        //Posicion de los iconos con los parrafos
+        .iconPerson i{
+            top: 75px;
+        }
+        .iconSinLimites i{
+            top: 70px;
+            
+        }
+        .sinlimites{
+            padding: 0px 0px 100px;
+        }
+
+         
+    }
+    
+    //imagen de fondo
+    .imgFondo{
+        display: flex;
+        justify-content: flex-end;
+        
+        img{
+            position: relative;
+            left: -210px;
+            top: 220px; 
+        }
+    }
+    
+}

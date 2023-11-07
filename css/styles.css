@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/*Reset css*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 75px;
+  font-size: 20px;
+  background-color: rgb(0, 0, 0);
+}
+.navbar img {
+  object-fit: contain;
+  display: block;
+  width: auto;
+  height: 2.9375rem;
+  position: relative;
+  left: 280px;
+}
+.navbar .container-fluid i {
+  padding: 40px;
+}
+.navbar .collapse {
+  justify-content: end;
+  padding: 100px;
+}
+.navbar .collapse .navbar-nav .nav-item {
+  padding: 0px 20px;
+}
+.navbar .collapse .navbar-nav .nav-item a:hover {
+  transform: scale(1.2);
+}
+.navbar .collapse .navbar-nav .nav-item a p:hover {
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  height: 55px;
+}
+.footer i {
+  color: #ffffff;
+  padding: 20px;
+}
+.footer .footer-tex {
+  padding: 20px;
+}
+.footer .footer-redsocial a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.section-index {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0px;
+}
+.section-index div h5 {
+  position: relative;
+  top: 100px;
+  color: #b06bff;
+  padding: 20px 20px;
+  margin: 20px;
+  font-size: 24px;
+}
+.section-index div h5:hover {
+  content: "";
+  background-color: #b06bff;
+  position: absolute;
+  top: 50%;
+  left: -16px;
+  width: 30px;
+  height: 1.5px;
+}
+.section-index video {
+  position: relative; /* Permite el desplazamiento relativo del video*/
+  left: 200px; /* Mueve el video 300px hacia la derecha*/
+  top: 100px; /* Mueve el video hacia abajo*/ /* si lo queremos mover hacia arriba usamos el signo menor (-)*/
+}
+.section-index div p {
+  position: relative;
+  top: 80px;
+  color: white;
+  justify-content: space-between;
+  font-size: 60px;
+}
+.section-index div div p {
+  position: relative;
+  top: 85px;
+  font-size: 16px;
+}
+.section-index .botonInscripcion button {
+  background-color: #b06bff;
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+  width: 140px;
+  height: 43px;
+  border-color: #b06bff;
+  position: relative;
+  top: 110px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background: #b06bff;
+  cursor: pointer;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.section-index .botonInscripcion button a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+}
+.section-index .botonInscripcion button:hover {
+  color: black;
+}
+.section-index .botonInscripcion button span {
+  position: absolute;
+  background-color: white;
+  transition: 0.5s;
+}
+.section-index .botonInscripcion button span:nth-child(1) {
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: -100%;
+}
+.section-index .botonInscripcion button span:nth-child(2) {
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  right: -100%;
+}
+.section-index .botonInscripcion button span:nth-child(3) {
+  width: 1px;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+}
+.section-index .botonInscripcion button span:nth-child(4) {
+  width: 1px;
+  height: 100%;
+  top: -100%;
+  right: 0;
+}
+.section-index .botonInscripcion button:hover span:nth-child(1) {
+  left: 0;
+}
+.section-index .botonInscripcion button:hover span:nth-child(2) {
+  right: 0;
+}
+.section-index .botonInscripcion button:hover span:nth-child(3) {
+  bottom: 0;
+}
+.section-index .botonInscripcion button:hover span:nth-child(4) {
+  top: 0;
+}
+
+.body-aboutUs {
+  background-color: rgb(26, 29, 55);
+}
+
+.section-aboutUs {
+  color: white;
+}
+.section-aboutUs .section-titulos {
+  text-align: center;
+}
+.section-aboutUs .section-titulos h6 {
+  position: relative;
+  top: 70px;
+  color: #b06bff;
+}
+.section-aboutUs .section-titulos h4 {
+  position: relative;
+  top: 80px;
+  font-size: 45px;
+  color: #b06bff;
+}
+.section-aboutUs .section-titulos p {
+  position: relative;
+  top: 95px;
+  font-size: 19px;
+}
+.section-aboutUs .img-contenido {
+  position: absolute;
+  left: 370px;
+  top: 500px;
+}
+.section-aboutUs .img-contenido h6 {
+  font-size: 17px;
+}
+.section-aboutUs .img-contenido p {
+  font-size: 14.5px;
+}
+.section-aboutUs .img-contenido i {
+  position: relative;
+  top: 60px;
+  left: -100px;
+}
+.section-aboutUs .img-contenido .iconPerson i {
+  top: 75px;
+}
+.section-aboutUs .img-contenido .iconSinLimites i {
+  top: 70px;
+}
+.section-aboutUs .img-contenido .sinlimites {
+  padding: 0px 0px 100px;
+}
+.section-aboutUs .imgFondo {
+  display: flex;
+  justify-content: flex-end;
+}
+.section-aboutUs .imgFondo img {
+  position: relative;
+  left: -210px;
+  top: 220px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.section {
+  width: 100%;
+  position: relative;
+}
+
+.black {
+  background-color: black;
+  height: 350px; /* Altura de la primera sección */
+}
+
+.white {
+  background-color: white;
+  height: calc(100% - 350px); /* La segunda sección toma el espacio restante */
+}
+
+.body-contact {
+  background-color: rgb(26, 29, 55);
+}
+
+.section-contact {
+  color: white;
+  text-align: center;
+  padding: 100px;
+}
+.section-contact div h3 {
+  position: relative;
+  left: 10px;
+  font-size: 70px;
+}
+.section-contact div p {
+  padding-left: 0px;
+  font-size: 16px;
+}
+
+form {
+  position: absolute;
+  left: 300px;
+  top: 370px;
+}
+form label {
+  color: rgb(255, 255, 255);
+}
+form .form-control {
+  width: 45%;
+  height: 40px;
+}
+form .input-group {
+  width: 45%;
+}
+form .col-md-3 {
+  position: relative;
+  left: -400px;
+  width: 20%;
+}
+
+.imgContact img {
+  position: relative;
+  top: -50px;
+  left: 1200px;
+  width: 600px;
+}
+
+/*# sourceMappingURL=styles.css.map */

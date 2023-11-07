@@ -1,0 +1,46 @@
+.navbar{
+    height: 75px;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+
+    //Logo de mi pagina
+    img{
+        object-fit: contain;
+        display: block;
+        width: auto;
+        height: 2.9375rem;
+        position: relative;
+        left: 280px;
+    }
+
+    .container-fluid i{
+        padding: 40px;
+    }
+    //Mandamos los hijos al final del header
+    .collapse{
+        justify-content: end; 
+        padding: 100px;
+        
+        .navbar-nav{
+            //separamos los items ente si por un ancho de 20px
+            .nav-item{
+                padding: 0px 20px;  
+                
+                a{
+                    //Transiciones del header
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                    p{
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+

@@ -1,0 +1,16 @@
+// General
+@import './general/reset.scss';
+@import './general/variables.scss';
+@import './general/typography.scss';
+@import './general/animations.scss';
+
+//Layout
+@import './layaut/header.scss';
+@import './layaut/footer.scss';
+
+//pages
+@import './pages/index.scss';
+@import './pages/aboutUs.scss';
+@import './pages/blogAcademy.scss';
+@import './pages/contact.scss';
+@import './pages/teachers.scss';

@@ -1,0 +1,31 @@
+.navbar {
+  height: 75px;
+  font-size: 20px;
+  background-color: rgb(0, 0, 0);
+}
+.navbar img {
+  object-fit: contain;
+  display: block;
+  width: auto;
+  height: 2.9375rem;
+  position: relative;
+  left: 280px;
+}
+.navbar .container-fluid i {
+  padding: 40px;
+}
+.navbar .collapse {
+  justify-content: end;
+  padding: 100px;
+}
+.navbar .collapse .navbar-nav .nav-item {
+  padding: 0px 20px;
+}
+.navbar .collapse .navbar-nav .nav-item a:hover {
+  transform: scale(1.2);
+}
+.navbar .collapse .navbar-nav .nav-item a p:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=header.css.map */
