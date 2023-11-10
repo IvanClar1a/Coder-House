@@ -233,10 +233,29 @@ body, html {
   height: 100%;
   margin: 0;
 }
-
-.section {
+body .section, html .section {
   width: 100%;
   position: relative;
+}
+body .section .titulo-blog h1, html .section .titulo-blog h1 {
+  position: relative;
+  top: 100px;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+}
+body .section .boton-busqueda, html .section .boton-busqueda {
+  position: relative;
+  top: 220px;
+  text-align: center;
+}
+body .section .boton-busqueda input, html .section .boton-busqueda input {
+  width: 12%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .black {

@@ -1,21 +1,47 @@
 body,html{
     height: 100%;
     margin: 0;
-}
-
+    
 
 .section{
 
     width: 100%;
     position: relative;
-
     
+    .titulo-blog h1{
+        position: relative;
+        top: 100px;
+        font-size: 60px;
+        text-align: center;
+        color: white;
+    }
+    .boton-busqueda{
+
+        position:relative;
+        top: 220px;
+        text-align: center;
+
+        input{
+            width: 12%;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+        
+        
+    }
+}
+   
 }
 .black{
     background-color: black;
     height: 350px; /* Altura de la primera sección */
+    
 }
 .white{
     background-color: white;
-height: calc(100% - 350px); /* La segunda sección toma el espacio restante */
+    height: calc(100% - 350px); /* La segunda sección toma el espacio restante */
 }
+
