@@ -233,23 +233,24 @@ body, html {
   height: 100%;
   margin: 0;
 }
-body .section, html .section {
+
+.section {
   width: 100%;
   position: relative;
 }
-body .section .titulo-blog h1, html .section .titulo-blog h1 {
+.section .titulo-blog h1 {
   position: relative;
-  top: 100px;
+  top: 50px;
   font-size: 60px;
   text-align: center;
   color: white;
 }
-body .section .boton-busqueda, html .section .boton-busqueda {
+.section .boton-busqueda {
   position: relative;
-  top: 220px;
+  top: 120px;
   text-align: center;
 }
-body .section .boton-busqueda input, html .section .boton-busqueda input {
+.section .boton-busqueda input {
   width: 12%;
   height: 40px;
   border-radius: 5px;
@@ -258,14 +259,68 @@ body .section .boton-busqueda input, html .section .boton-busqueda input {
   padding: 10px;
 }
 
+.tarjetas-section {
+  position: relative;
+  top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tarjetas-section .conteiner-blog {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /* Alinea las tarjetas con espacio alrededor */
+  max-width: 1100px;
+}
+.tarjetas-section .card {
+  width: 30%; /* Ajusta el ancho según tus necesidades */
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.tarjetas-section .card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.tarjetas-section .card img {
+  width: 100%;
+  height: 180px;
+}
+.tarjetas-section .card .contenido {
+  padding: 15px;
+  text-align: center;
+}
+.tarjetas-section .card .contenido p {
+  line-height: 1.5;
+  color: #6a6a6a;
+}
+.tarjetas-section .card .contenido h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.tarjetas-section .card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+
 .black {
   background-color: black;
-  height: 350px; /* Altura de la primera sección */
+  height: 290px; /* Altura de la primera sección */
 }
 
 .white {
   background-color: white;
-  height: calc(100% - 350px); /* La segunda sección toma el espacio restante */
+  height: calc(100% - 290px); /* La segunda sección toma el espacio restante */
 }
 
 .body-contact {
