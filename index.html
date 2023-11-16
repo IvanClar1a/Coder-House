@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+    <!--Seo on-page-->
+    <meta name="description" content="La Academia de Ciberseguridad no es solo un centro de aprendizaje, sino también un motor de innovación. Contamos con tres centros de investigación y desarrollo ...">
+    <meta name="keywords" content="Academia, Acedemia de ciberseguridad, Ciberseguridad, Curso de ciberseguridad, Curso de ciberseguridad,Cursos de ciberseguridad, Programas de ciberseguridad, Carreras de ciberseguridad">">
 
     <!--Agreagar el link para las nuevas tipografias-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,11 +16,14 @@
     <!-- Añadiendo bostrap, se agrega siempre arriba del css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!-- Añadiendo AOS para animaciones-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- Vincular el css con el html mediante la etiqueta link-->
     <link rel="stylesheet" href="./css/styles.css">
 
     <!--Favicon-->
-    <link rel="icon" href="../img/Favicon_Academia_de_Ciberseguridad.jpeg" >
+    <link rel="icon" href="./img/favicon_logo.png" >
 
     <!-- Scrip para agregar iconos de fontawesome-->
     <script src="https://kit.fontawesome.com/4fe2cf8e62.js" crossorigin="anonymous"></script>
@@ -64,12 +69,12 @@
 
 
   <!-- Contenido de la pagina-->
-  <div class="container"> <!--Clase contenedora "Padre" del section y footer-->
+  <div class="container"> 
 
     <section class="section-index">
 
       <div>
-          <h5> Bienvenido a la Academia de Ciberseguridad</h5>
+          <h1>Bienvenido a la Academia de Ciberseguridad</h1>
           <p class="titulo-grande">FORJA TU CAMINO EN<br>
             CIBERSEGURIDAD HACIA <br>
             LA EXCELENCIA
@@ -80,7 +85,7 @@
           </div>
           
           <!--Botton de inscripcion-->
-          <div class="botonInscripcion">
+          <div class="botonInscripcion" data-aos="zoom-in">
             <button>
                 <span></span>
                 <span></span>
@@ -96,7 +101,7 @@
         
       
       <!-- Video promocional -->
-      <Video  class="videoPromocional" src="./video/video_promocional.mp4" type="video/m4" width="570" height="420" controls autoplay muted> </Video>
+      <Video  class="videoPromocional" src="./video/video_promocional .mp4" type="video/m4" width="570" height="420" controls autoplay muted> </Video>
       
       
             
@@ -135,6 +140,13 @@
     </div>
   </footer>
 
+  <!--Scrip de AOS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!--Scrip de bostrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

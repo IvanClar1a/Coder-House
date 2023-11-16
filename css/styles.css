@@ -67,7 +67,7 @@ body {
   flex-direction: row;
   padding: 5px 0px;
 }
-.section-index div h5 {
+.section-index div h1 {
   position: relative;
   top: 100px;
   color: #b06bff;
@@ -75,7 +75,7 @@ body {
   margin: 20px;
   font-size: 24px;
 }
-.section-index div h5:hover {
+.section-index div h1::before {
   content: "";
   background-color: #b06bff;
   position: absolute;
@@ -178,16 +178,17 @@ body {
 .section-aboutUs .section-titulos {
   text-align: center;
 }
-.section-aboutUs .section-titulos h6 {
-  position: relative;
-  top: 70px;
-  color: #b06bff;
-}
-.section-aboutUs .section-titulos h4 {
+.section-aboutUs .section-titulos h1 {
   position: relative;
   top: 80px;
   font-size: 45px;
   color: #b06bff;
+}
+.section-aboutUs .section-titulos h2 {
+  position: relative;
+  top: 70px;
+  color: #b06bff;
+  font-size: 20px;
 }
 .section-aboutUs .section-titulos p {
   position: relative;
@@ -351,7 +352,7 @@ body, html {
   text-align: center;
   padding: 100px;
 }
-.section-contact div h3 {
+.section-contact div h1 {
   position: relative;
   left: 10px;
   font-size: 70px;

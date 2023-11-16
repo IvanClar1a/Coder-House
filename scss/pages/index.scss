@@ -7,7 +7,7 @@ body{
     padding: 5px 0px;
 
     div{
-        h5{
+        h1{
             position: relative;
             top: 100px;
             color: #b06bff;   
@@ -16,7 +16,7 @@ body{
             font-size: 24px;
 
             //Linea al comienzo del h5
-            &:hover{
+            &::before{
                 content: '';
                 background-color:#b06bff;
                 position: absolute;
