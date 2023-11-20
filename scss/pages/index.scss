@@ -15,16 +15,6 @@ body{
             margin: 20px ;
             font-size: 24px;
 
-            //Linea al comienzo del h5
-            &::before{
-                content: '';
-                background-color:#b06bff;
-                position: absolute;
-                top: 50%;
-                left: -16px;
-                width: 30px;
-                height: 1.5px;
-            }
         }
     }
 

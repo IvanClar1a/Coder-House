@@ -83,15 +83,6 @@ body {
   margin: 20px;
   font-size: 24px;
 }
-.section-index div h1::before {
-  content: "";
-  background-color: #b06bff;
-  position: absolute;
-  top: 50%;
-  left: -16px;
-  width: 30px;
-  height: 1.5px;
-}
 .section-index video {
   position: relative; /* Permite el desplazamiento relativo del video*/
   left: 200px; /* Mueve el video 300px hacia la derecha*/
@@ -409,15 +400,6 @@ form .col-md-3 {
     font-size: 20px;
     top: 60px;
   }
-  .section-index div h1::before {
-    content: "";
-    background-color: #b06bff;
-    position: absolute;
-    top: 29%;
-    left: 42px;
-    width: 20px;
-    height: 1.5px;
-  }
   .section-index video {
     position: relative; /* Permite el desplazamiento relativo del video*/
     left: 0px; /* Mueve el video 300px hacia la derecha*/
@@ -488,8 +470,7 @@ form .col-md-3 {
     top: -950px;
   }
   body, html {
-    height: 100%;
-    margin: 0;
+    height: 150%;
   }
   .section {
     width: 100%;
@@ -582,6 +563,53 @@ form .col-md-3 {
   .white {
     background-color: white;
     height: calc(100% - 290px); /* La segunda sección toma el espacio restante */
+  }
+  .body-contact {
+    height: 110%;
+  }
+  .section-contact {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px;
+  }
+  .section-contact div h1 {
+    position: relative;
+    top: 120px;
+    font-size: 30px;
+  }
+  .section-contact div p {
+    padding: 30px;
+    text-align: justify;
+    position: relative;
+    top: 120px;
+    font-size: 16px;
+  }
+  form {
+    position: absolute;
+    left: 80px;
+    top: 770px;
+  }
+  form label {
+    color: rgb(255, 255, 255);
+  }
+  form .form-control {
+    width: 80%;
+    height: 40px;
+  }
+  form .input-group {
+    width: 80%;
+  }
+  form .col-md-3 {
+    position: relative;
+    left: 0px;
+    width: 80%;
+  }
+  .imgContact img {
+    position: relative;
+    text-align: center;
+    top: 150px;
+    left: 50px;
+    width: 250px;
   }
   .footer {
     flex-direction: column;

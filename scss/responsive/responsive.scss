@@ -11,6 +11,7 @@
 
     //index
     
+    
     .section-index{
         flex-direction:column;
         div{
@@ -19,16 +20,8 @@
                 font-size: 20px;
                 top: 60px;
     
-                //Linea al comienzo del h5
-                &::before{
-                    content: '';
-                    background-color:#b06bff;
-                    position: absolute;
-                    top: 29%;
-                    left: 42px;
-                    width: 20px;
-                    height: 1.5px;
-                }
+               
+            
             }
         }
     
@@ -134,9 +127,7 @@
 
     //Blog de la academia
     body,html{
-        height: 100%;
-        margin: 0;
-        
+        height: 150%;
     }
     
     
@@ -185,7 +176,8 @@
         }
     
         .card {
-            width: 80%; /* Ajusta el ancho según tus necesidades */
+            width: 80%;/* Ajusta el ancho según tus necesidades */
+            
             margin: 20px;
             border-radius: 6px;
             overflow: hidden;
@@ -256,6 +248,76 @@
         height: calc(100% - 290px); /* La segunda sección toma el espacio restante */
     }
 
+
+    //Contacto
+    
+    
+    .body-contact{
+        height: 110%;
+    }
+    .section-contact{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 0px; 
+        
+    
+        div{
+            h1{
+                position: relative;
+                top: 120px;
+                font-size: 30px;  
+            }
+            p{
+                padding: 30px;
+                text-align: justify;
+                position: relative;
+                top: 120px;
+                font-size: 16px;
+            }
+        }
+        
+    }
+    
+    form{
+        
+        position: absolute;
+        left: 80px;
+        top: 770px ;
+    
+        label{
+            color: rgb(255, 255, 255); 
+        }
+        .form-control{
+            
+            width: 80%;
+            height: 40px;
+        }
+        .input-group{
+            width: 80%; 
+        }
+    
+        // El formulario provincia lo muevo para que quede al lado del inpum ciudad
+        .col-md-3{ 
+            position: relative;
+            left:0px;
+            width: 80%;
+        } 
+    
+    }
+    
+    .imgContact{
+            
+        img{
+            position: relative;
+            text-align: center;
+            top: 150px;
+            left: 50px;
+            width: 250px;
+                
+        }
+    }
+    
+    
     //footer
     .footer{
         
