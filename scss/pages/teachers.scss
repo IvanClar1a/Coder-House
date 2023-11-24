@@ -1,0 +1,35 @@
+
+.body-profesores{
+    background-color:  rgb(26, 29, 55);
+}
+
+.section-profesores{
+    text-align: center;
+    position: relative;
+    top: 100px;
+    color: white;
+    h2{
+        color: #b06bff;
+        font-size: 20px;
+    }
+    p{
+        font-size: 50px;
+        word-spacing: 0px;
+    }
+
+    .img-profesores{
+        position: relative;
+        top: 40px;
+        img{
+           width: 200px;
+           height: 200px;
+        }
+    }
+    .contenido-p{
+        position: relative;
+        top: 130px;
+        p{
+            font-size: 20px;
+        }
+    }
+}
