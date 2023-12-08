@@ -510,7 +510,7 @@ form .col-md-3 {
     width: 100%;
   }
   .section .titulo-blog h1 {
-    top: 60px;
+    top: 85px;
     font-size: 35px;
   }
   .section .boton-busqueda {
@@ -705,7 +705,7 @@ form .col-md-3 {
     width: 100%;
   }
   .section .titulo-blog h1 {
-    top: 60px;
+    top: 85px;
     font-size: 35px;
   }
   .section .boton-busqueda {
@@ -901,7 +901,7 @@ form .col-md-3 {
     width: 100%;
   }
   .section .titulo-blog h1 {
-    top: 60px;
+    top: 85px;
     font-size: 35px;
   }
   .section .boton-busqueda {
@@ -1097,7 +1097,7 @@ form .col-md-3 {
     width: 100%;
   }
   .section .titulo-blog h1 {
-    top: 60px;
+    top: 85px;
     font-size: 35px;
   }
   .section .boton-busqueda {
@@ -1293,7 +1293,7 @@ form .col-md-3 {
     width: 100%;
   }
   .section .titulo-blog h1 {
-    top: 60px;
+    top: 85px;
     font-size: 35px;
   }
   .section .boton-busqueda {
@@ -1489,7 +1489,7 @@ form .col-md-3 {
     width: 100%;
   }
   .section .titulo-blog h1 {
-    top: 60px;
+    top: 85px;
     font-size: 35px;
   }
   .section .boton-busqueda {
@@ -1580,202 +1580,6 @@ form .col-md-3 {
     top: 150px;
     left: 140px;
     width: 300px;
-  }
-  .footer {
-    text-align: center;
-    flex-direction: column;
-    height: 80px;
-  }
-  .footer i {
-    padding: 10px;
-    position: relative;
-    top: -25px;
-    left: 10px;
-  }
-  .footer .footer-tex {
-    padding: 20px;
-    font-size: 11px;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-  .navbar img {
-    left: 50px;
-  }
-  .section-index {
-    flex-direction: column;
-  }
-  .section-index div h1 {
-    text-align: center;
-    font-size: 20px;
-    top: 60px;
-  }
-  .section-index video {
-    position: relative; /* Permite el desplazamiento relativo del video*/
-    left: 0px; /* Mueve el video 300px hacia la derecha*/
-    top: 100px; /* Mueve el video hacia abajo*/ /* si lo queremos mover hacia arriba usamos el signo menor (-)*/
-    width: auto;
-  }
-  .section-index div p {
-    text-align: center;
-    font-size: 37px;
-  }
-  .section-index div div p {
-    position: relative;
-    top: 85px;
-    font-size: 16px;
-  }
-  .section-aboutUs {
-    display: flex;
-    flex-direction: column;
-  }
-  .section-aboutUs .section-titulos {
-    text-align: center;
-  }
-  .section-aboutUs .section-titulos h1 {
-    top: 100px;
-    font-size: 28px;
-  }
-  .section-aboutUs .section-titulos h2 {
-    top: 90px;
-    font-size: 15px;
-  }
-  .section-aboutUs .section-titulos p {
-    padding: 15px;
-    text-align: justify;
-    top: 100px;
-    font-size: 16px;
-  }
-  .section-aboutUs .img-contenido {
-    position: relative;
-    left: 0px;
-    top: 400px;
-  }
-  .section-aboutUs .img-contenido h6 {
-    font-size: 15px;
-    padding-top: 60px;
-    text-align: center;
-  }
-  .section-aboutUs .img-contenido p {
-    font-size: 12.5px;
-    padding: 10px;
-    text-align: center;
-  }
-  .section-aboutUs .img-contenido i {
-    top: 20px;
-    left: 290px;
-  }
-  .section-aboutUs .img-contenido .iconPerson i {
-    top: 10px;
-  }
-  .section-aboutUs .img-contenido .iconSinLimites i {
-    top: 20px;
-  }
-  .section-aboutUs .imgFondo {
-    justify-content: center;
-  }
-  .section-aboutUs .imgFondo img {
-    left: 2px;
-    width: 250px;
-    top: -800px;
-  }
-  body, html {
-    height: 150%;
-  }
-  .section {
-    width: 100%;
-  }
-  .section .titulo-blog h1 {
-    top: 60px;
-    font-size: 35px;
-  }
-  .section .boton-busqueda {
-    top: 120px;
-    left: 20px;
-    text-align: center;
-  }
-  .section .boton-busqueda input {
-    width: 60%;
-  }
-  .tarjetas-section {
-    position: relative;
-    top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .tarjetas-section .conteiner-blog {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    display: flex;
-    justify-content: space-around; /* Alinea las tarjetas con espacio alrededor */
-    max-width: 1100px;
-  }
-  .tarjetas-section .card {
-    width: 80%; /* Ajusta el ancho según tus necesidades */
-  }
-  .tarjetas-section .card img {
-    width: 100%;
-    height: 180px;
-  }
-  .tarjetas-section .card .contenido {
-    padding: 15px;
-    text-align: center;
-  }
-  .tarjetas-section .card .contenido p {
-    line-height: 1.5;
-    color: #6a6a6a;
-  }
-  .tarjetas-section .card .contenido h3 {
-    font-weight: 400;
-    margin-bottom: 15px;
-  }
-  .body-contact {
-    height: 110%;
-  }
-  .section-contact {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 0px;
-  }
-  .section-contact div h1 {
-    position: relative;
-    top: 120px;
-    font-size: 30px;
-  }
-  .section-contact div p {
-    padding: 30px;
-    text-align: justify;
-    position: relative;
-    top: 120px;
-    font-size: 16px;
-  }
-  form {
-    position: absolute;
-    left: 80px;
-    top: 700px;
-  }
-  form label {
-    color: rgb(255, 255, 255);
-  }
-  form .form-control {
-    width: 80%;
-    height: 40px;
-  }
-  form .input-group {
-    width: 80%;
-  }
-  form .col-md-3 {
-    position: relative;
-    left: 0px;
-    width: 80%;
-  }
-  .imgContact img {
-    position: relative;
-    text-align: center;
-    top: 150px;
-    left: 170px;
-    width: 360px;
   }
   .footer {
     text-align: center;
